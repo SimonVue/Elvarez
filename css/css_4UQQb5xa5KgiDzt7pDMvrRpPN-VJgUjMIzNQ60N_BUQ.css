@@ -2576,10 +2576,10 @@ html body .ibm-type-mono * {
   word-wrap: normal;
 }
 
-.ibm-duo-u--bg-lazy-load,
+/* .ibm-duo-u--bg-lazy-load,
 .ibm-duo-u--bg-lazy-load * {
   background-image: none !important;
-}
+} */
 
 .ibm-duo-u--blocklink {
   position: absolute;
