@@ -1,0 +1,62 @@
+@import "_mixin.scss";
+
+.menu-burger {
+	display: none;
+	@media (max-width: rem(767)) {
+		display: block;
+		position: relative;
+		width: rem(25);
+		height: rem(18);
+		cursor: pointer;
+		z-index: 1;
+	}
+	&::before,
+	&::after {
+		content: "";
+	}
+
+	&::before {
+		top: 0;
+	}
+
+	&::after {
+		bottom: 0;
+	}
+	span,
+	&::before,
+	&::after {
+		left: 0;
+		position: absolute;
+		height: 3px;
+		width: 100%;
+		transition: all 0.3s ease 0s;
+		background: $fontSizeColor;
+	}
+	span {
+		top: 50%;
+		transform: scale(1) translate(0px, -50%);
+	}
+}
+
+._close {
+	span {
+		background: $fontSizeColor;
+		transform: scale(0) translate(0px, -50%);
+	}
+
+	&::before {
+		background: $fontSizeColor;
+		top: 50%;
+		transform: rotate(-45deg) translate(0px, -50%);
+	}
+
+	&::after {
+		background: $fontSizeColor;
+		top: 40%;
+		transform: rotate(45deg) translate(0px, 50%);
+	}
+}
+
+._lock {
+	overflow: hidden;
+}

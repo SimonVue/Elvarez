@@ -1,0 +1,28 @@
+@import "_mixin.scss";
+
+.news {
+  display: flex;
+  justify-content: space-between;
+  padding: rem(32) rem(16);
+  background: #f2f4f8;
+  align-items: center;
+  @media (max-width: rem(767)) {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  &__text {
+    width: calc(320px + (805 - 350) * ((100vw - 320px) / (1440 - 320)));
+    line-height: calc(18px + (36 - 18) * ((100vw - 320px) / (1170 - 320)));
+    font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (1170 - 320)));
+    font-weight: 300;
+    margin-right: 10px;
+    span {
+      font-weight: 400;
+    }
+  }
+  .button {
+    @include button;
+  }
+}
