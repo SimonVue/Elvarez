@@ -6,9 +6,8 @@
   justify-content: space-between;
   background: url("bg-promo.jpeg") center / cover no-repeat;
   height: rem(560);
-  color: $whiteSize;
+  color: $mainColor;
   padding: rem(32) rem(16);
-  //height: 100vh;
 
   &__title {
     font-size: calc(30px + (53 - 30) * ((100vw - 320px) / (1170 - 320)));

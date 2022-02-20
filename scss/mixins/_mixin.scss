@@ -19,7 +19,7 @@ $whiteSize: #fff;
 }
 
 @mixin backgroundBorder {
-  background: $orangeColor;
+  background-color: $orangeColor;
   border: 2px solid $orangeColor;
 }
 
