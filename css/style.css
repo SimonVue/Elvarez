@@ -169,8 +169,6 @@ label {
   color: #262626;
 }
 
-/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
-/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
 .menu-burger {
   display: none;
 }
@@ -243,7 +241,6 @@ label {
   overflow: hidden;
 }
 
-/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
 .nav__menu {
   display: none;
 }
@@ -311,7 +308,6 @@ hr {
   right: 0;
 }
 
-/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
 .accordion {
   width: 100%;
   height: auto;
@@ -376,7 +372,6 @@ hr {
   color: #fff;
 }
 
-/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
 .promo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -388,7 +383,7 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("/img/land.jpg") center/cover no-repeat;
+  background: url("bg-promo.jpeg") center/cover no-repeat;
   height: 35rem;
   color: #fff;
   padding: 2rem 1rem;
@@ -417,14 +412,14 @@ hr {
 .promo .button {
   width: 14.375rem;
   padding: 0.8125rem 1.25rem;
-  background: #0062ff;
+  background-color: #0062ff;
   color: #ececec;
   font-size: 1rem;
   text-decoration: none;
 }
 
 .promo .button:hover {
-  background: #0052d5;
+  background-color: #0052d5;
 }
 
 .promo .button:after {
@@ -444,7 +439,6 @@ hr {
   }
 }
 
-/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
 .news {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -485,14 +479,14 @@ hr {
 .news .button {
   width: 14.375rem;
   padding: 0.8125rem 1.25rem;
-  background: #0062ff;
+  background-color: #0062ff;
   color: #ececec;
   font-size: 1rem;
   text-decoration: none;
 }
 
 .news .button:hover {
-  background: #0052d5;
+  background-color: #0052d5;
 }
 
 .news .button:after {
@@ -503,7 +497,6 @@ hr {
   vertical-align: middle;
 }
 
-/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
 .header_menu {
   position: absolute;
   top: -100%;
