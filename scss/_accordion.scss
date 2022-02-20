@@ -1,0 +1,60 @@
+@import "_mixin.scss";
+
+.accordion {
+  width: 100%;
+  height: auto;
+  background: $mainColor;
+  padding: 48px 0 70px;
+  display: block;
+
+  &__button {
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: rem(16);
+    line-height: 27px;
+    color: $fontSizeColor;
+    cursor: pointer;
+    padding-right: 20px;
+    text-align: left;
+    background: $mainColor;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+    &:after {
+      font-family: FontAwesome, serif;
+      content: "\+";
+      font-size: rem(16);
+      color: $fontSizeColor;
+      float: right;
+      margin-left: 5px;
+    }
+  }
+
+  &__panel {
+    background-color: $mainColor;
+    color: $fontSizeColor;
+    line-height: 27px;
+    max-width: 1100px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-left: 10px;
+  }
+  &__panel_item {
+    text-align: left;
+    padding: 7px 20px 7px 40px;
+    list-style: none;
+    a {
+      text-decoration: none;
+      color: $fontSizeColor;
+    }
+  }
+}
+.active {
+  &::after {
+    font-family: FontAwesome, serif;
+    content: "\f068";
+    color: #fff;
+  }
+}

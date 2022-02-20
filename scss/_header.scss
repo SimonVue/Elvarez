@@ -1,0 +1,128 @@
+@import "_mixin.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background: $mainColor;
+  padding: 0 rem(40);
+  align-items: center;
+  gap: rem(15);
+  @media (max-width: rem(1160)) {
+    padding: rem(2) rem(15);
+  }
+  @media (max-width: rem(427)) {
+    gap: rem(20);
+  }
+
+  &__logo {
+    height: rem(50);
+    @media (max-width: rem(767)) {
+      margin-right: calc(5px + (587 - 390) * ((100vw - 425px) / (700 - 390)));
+    }
+  }
+  @media (max-width: rem(427)) {
+    margin-right: rem(80);
+  }
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.header__nav {
+  &_menu {
+    display: flex;
+    justify-content: space-between;
+    gap: calc(5px + (80 - 5) * ((100vw - 900px) / (1440 - 900)));
+    @media (max-width: rem(767)) {
+      display: none;
+    }
+    @media (max-width: rem(427)) {
+      gap: rem(20);
+    }
+  }
+}
+
+.menu_item {
+  position: relative;
+  list-style: none;
+  text-align: center;
+  padding-bottom: rem(5);
+  transition: 3s;
+  line-height: rem(16);
+
+  &:hover::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: rem(2.4);
+    background-color: $blueColor;
+    opacity: 1;
+  }
+  a {
+    text-decoration: none;
+    color: $fontSizeColor;
+    font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+
+.header__search {
+  width: rem(220);
+
+  @media (max-width: rem(427)) {
+    text-align: end;
+    font-size: $fontSizeColor;
+    width: rem(35);
+  }
+}
+
+label {
+  position: relative;
+}
+.search_input {
+  width: 100%;
+  height: rem(38);
+  border: 1px solid #c1c1c1;
+  padding: 0 rem(40) 0 rem(10);
+  border-radius: 3px;
+  outline: none;
+  @media (max-width: rem(427)) {
+    display: none;
+  }
+}
+
+.search_btn {
+  position: absolute;
+  right: 0;
+  width: rem(40);
+  height: rem(35);
+  border: none;
+  background: inherit;
+  cursor: pointer;
+
+  .fa-solid {
+    font-size: rem(20);
+    color: #b1b1b1;
+    @media (max-width: rem(427)) {
+      color: $fontSizeColor;
+    }
+    &:hover {
+      color: $fontSizeColor;
+    }
+  }
+  @media (max-width: rem(427)) {
+    position: relative;
+    text-align: center;
+  }
+}
+.header__profile {
+  .fa-solid {
+    font-size: rem(24);
+    text-decoration: none;
+    color: $fontSizeColor;
+  }
+}

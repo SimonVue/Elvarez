@@ -1,0 +1,59 @@
+@function rem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+
+// @mixin fontSize($value) {
+//   font-size: $value; //Fallback in px
+//   font-size: rem($value);
+// }
+
+$mainColor: #ececec;
+$fontSizeColor: #262626;
+$blueColor: #0062ff;
+$whiteSize: #fff;
+
+@mixin colorBorder {
+  color: $orangeColor;
+  border: 2px solid $orangeColor;
+}
+
+@mixin backgroundBorder {
+  background: $orangeColor;
+  border: 2px solid $orangeColor;
+}
+
+@mixin wrapPosition {
+  max-width: rem(1170);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@mixin button {
+  width: rem(230);
+  padding: rem(13) rem(20);
+  background: $blueColor;
+  color: $mainColor;
+  font-size: rem(16);
+  text-decoration: none;
+  &:hover {
+    background: #0052d5;
+  }
+  &:after {
+    font-family: FontAwesome, serif;
+    content: "\f061";
+    font-size: rem(20);
+    margin-left: 20px;
+    vertical-align: middle;
+  }
+}
+/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
+
+// @media (max-width: em(1200))
+//   min-width: 970px
+
+// @media (max-width: em(992))
+//   min-width: 750px
+
+// @media (max-width: em(767))
+//   min-width: none
