@@ -36,4 +36,12 @@ function openHeaderMenu() {
   document.querySelector('.header_menu').classList.toggle('openMenu');
 }
 
-/* ============================  ================================ */
+/* ============================ First submenu list ================================ */
+document.getElementById('first-submenu-btn').onclick = function () {
+  openSubmenuList()
+};
+
+function openSubmenuList() {
+  //document.body.classList.toggle('_lock');
+  document.getElementById('first-submenu-list').classList.toggle('open-submenu-list');
+}
