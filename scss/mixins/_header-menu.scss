@@ -9,7 +9,11 @@
   background: $mainColor;
   padding: 48px 0 70px;
   display: block;
-  z-index: 1;
+  z-index: 0;
+  transition: 0.4s;
+  @media (max-width: rem(767)) {
+    display: none;
+  }
 
   &__button {
     width: 100%;
@@ -63,6 +67,6 @@
     }
   }
 }
-.open {
+.openMenu {
   top: 51px;
 }

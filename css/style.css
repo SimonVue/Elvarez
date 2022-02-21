@@ -14,6 +14,8 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 0.9375rem;
+  z-index: 1;
+  border-bottom: 2px solid #bfbfbf;
 }
 
 @media (max-width: 72.5rem) {
@@ -506,7 +508,16 @@ hr {
   background: #ececec;
   padding: 48px 0 70px;
   display: block;
-  z-index: 1;
+  z-index: 0;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+
+@media (max-width: 47.9375rem) {
+  .header_menu {
+    display: none;
+  }
 }
 
 .header_menu__button {
@@ -571,7 +582,7 @@ hr {
   background: #0062ff;
 }
 
-.open {
+.openMenu {
   top: 51px;
 }
 

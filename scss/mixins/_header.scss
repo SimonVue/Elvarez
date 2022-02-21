@@ -8,6 +8,8 @@
   padding: 0 rem(40);
   align-items: center;
   gap: rem(15);
+  z-index: 1;
+  border-bottom: 2px solid #bfbfbf;
   @media (max-width: rem(1160)) {
     padding: rem(2) rem(15);
   }
