@@ -36,33 +36,4 @@ function openHeaderMenu() {
   document.querySelector('.header_menu').classList.toggle('openMenu');
 }
 
-/* =========================  ======================== */
-
-
-
-
-
-
-
-
-
-
-
-
-// const btn = document.getElementsByClassName("header-menu__button");
-// const openMenu = document.querySelector('.header-menu__panel');
-//const i;
-
-
-
-// for (let i = 0; i < acc.length; i++) {
-//   btn[i].addEventListener("click", function () {
-//     openMenu.classList.toggle("open");
-//     let panel = openMenu.nextElementSibling;
-//     if (panel.style.maxHeight) {
-//       panel.style.maxHeight = null;
-//     } else {
-//       panel.style.maxHeight = panel.scrollHeight + "px";
-//     }
-//   });
-// }
+/* ============================  ================================ */
