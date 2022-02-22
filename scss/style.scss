@@ -1,12 +1,13 @@
-@import "mixins/mixin";
-@import "mixins/header";
-@import "mixins/burger";
-@import "mixins/burger-menu";
-@import "mixins/accordion";
-@import "mixins/promo";
-@import "mixins/news";
-@import "mixins/header-menu";
-@import "mixins/carusel";
+@import "mixin";
+@import "header";
+@import "burger";
+@import "burger-menu";
+@import "accordion";
+@import "promo";
+@import "news";
+@import "header-menu";
+@import "carusel";
+@import "trial-products";
 
 * {
   box-sizing: border-box;
