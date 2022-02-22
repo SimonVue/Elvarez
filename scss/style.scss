@@ -6,6 +6,7 @@
 @import "mixins/promo";
 @import "mixins/news";
 @import "mixins/header-menu";
+@import "mixins/carusel";
 
 * {
   box-sizing: border-box;
@@ -29,5 +30,5 @@ body {
 }
 
 .content {
-  flex-grow: 1;
+  flex-grow: 0;
 }
