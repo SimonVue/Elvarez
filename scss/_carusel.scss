@@ -4,6 +4,7 @@
   display: flex;
   justify-content: space-between;
   padding: rem(32) 0;
+
   &__title {
     font-size: rem(16);
     font-weight: 600;
@@ -15,6 +16,9 @@
     width: 1050px;
     height: rem(550);
     background: #fff;
+    &__products {
+      background: $greyColor;
+    }
     img {
       width: 100%;
       height: auto;
@@ -26,7 +30,7 @@
       width: rem(333);
       height: rem(480);
       margin: 0 auto;
-      background: $greyColor;
+      background: #f2f4f8;
       &:hover {
         background: #d8dbe1;
       }
@@ -52,6 +56,9 @@
           font-size: rem(22);
         }
       }
+    }
+    .card__products_card {
+      background: #fff;
     }
     .arrow {
       width: rem(32);
@@ -100,5 +107,23 @@
       display: inline-block;
       padding: 0 16px 0 0;
     }
+  }
+}
+
+.cards-news__products {
+  background: $greyColor;
+  &_left-block {
+    padding: 0 rem(20);
+    text-align: left;
+  }
+  &_title {
+    width: 150px;
+    margin-bottom: 30px;
+    padding: 0;
+  }
+  &_link {
+    text-decoration: none;
+    color: $blueColor;
+    font-weight: 300;
   }
 }

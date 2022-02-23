@@ -7,7 +7,7 @@
 @import "news";
 @import "header-menu";
 @import "carusel";
-@import "trial-products";
+@import "technology";
 
 * {
   box-sizing: border-box;
@@ -31,5 +31,5 @@ body {
 }
 
 .content {
-  flex-grow: 0;
+  flex-grow: 1;
 }

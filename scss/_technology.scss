@@ -1,0 +1,44 @@
+@import "mixin";
+
+.technology {
+  display: flex;
+  padding: rem(32) rem(18);
+  &__title {
+    font-size: rem(16);
+    font-weight: 600;
+    width: rem(180);
+  }
+}
+
+.card {
+  display: block;
+  padding: rem(16);
+  width: rem(460);
+  height: rem(480);
+  margin-left: rem(16);
+  background: $greyColor;
+  &:first-child {
+    background: #fff;
+  }
+  &__title {
+    margin-bottom: rem(30);
+  }
+  .card__text {
+    width: rem(185);
+  }
+  &__link {
+    list-style: none;
+    font-weight: 300;
+    &::before {
+      content: "-";
+      top: 0;
+      left: 0;
+      margin-right: 5px;
+      color: $blueColor;
+    }
+    a {
+      text-decoration: none;
+      color: $blueColor;
+    }
+  }
+}
