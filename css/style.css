@@ -169,6 +169,13 @@ label {
   font-size: 1.5rem;
   text-decoration: none;
   color: #262626;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.header__profile .fa-solid:hover {
+  color: #0062ff;
 }
 
 .menu-burger {
