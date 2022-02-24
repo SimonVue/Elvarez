@@ -937,7 +937,8 @@ hr {
 }
 
 footer {
-  padding: 2.5rem 5rem;
+  background: #ececec;
+  padding: 2.5rem 5rem 0;
 }
 
 .footer__menu {
@@ -947,6 +948,48 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.footer__menu .menu__title {
+  font-size: 1rem;
+  color: #5a5a5a;
+  font-weight: 400;
+  margin-bottom: 0.9375rem;
+}
+
+.footer__menu .menu__item {
+  font-weight: 300;
+  margin-bottom: 0.4375rem;
+}
+
+.footer__menu .menu__item_lang {
+  margin-top: 1.875rem;
+}
+
+.footer__menu .menu__link {
+  color: #5a5a5a;
+}
+
+.footer__menu .menu__link:hover {
+  border-bottom: 1px solid #0062ff;
+  color: #0062ff;
+}
+
+.footer__submenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-top: 1px solid #5a5a5a;
+  padding: 1.5625rem 0;
+  margin-top: 1.875rem;
+}
+
+.footer__submenu_link {
+  color: #5a5a5a;
+  font-weight: 300;
 }
 
 * {
@@ -979,5 +1022,13 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+li,
+ul,
+a {
+  text-decoration: none;
+  list-style: none;
+  color: #262626;
 }
 /*# sourceMappingURL=style.css.map */
