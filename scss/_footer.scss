@@ -1,7 +1,41 @@
 footer {
-  padding: rem(40) rem(80);
+  background: $mainColor;
+  padding: rem(40) rem(80) 0;
 }
 .footer__menu {
   display: flex;
   justify-content: space-between;
+  .menu__title {
+    font-size: rem(16);
+    color: $footerColor;
+    font-weight: 400;
+    margin-bottom: rem(15);
+  }
+  .menu__item {
+    font-weight: 300;
+    margin-bottom: rem(7);
+    &_lang {
+      margin-top: rem(30);
+    }
+  }
+  .menu__link {
+    color: $footerColor;
+    &:hover {
+      border-bottom: 1px solid $blueColor;
+      color: $blueColor;
+    }
+  }
+}
+
+.footer__submenu {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $footerColor;
+  padding: rem(25) 0;
+  margin-top: rem(30);
+
+  &_link {
+    color: $footerColor;
+    font-weight: 300;
+  }
 }
