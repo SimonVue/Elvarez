@@ -912,7 +912,7 @@ hr {
 }
 
 .towers__right {
-  background: url("./img/bg-tower-right.jpeg") center/cover no-repeat;
+  background: url("/img/bg-tower-right.jpeg") center/cover no-repeat;
 }
 
 .towers__right .info {
