@@ -840,6 +840,101 @@ hr {
   color: #0062ff;
 }
 
+.towers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.towers__left, .towers__right {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  height: 40.625rem;
+  padding: 1rem 2rem 0;
+  background: url("/img/bg-tower-left.jpeg") center/cover no-repeat;
+}
+
+.towers__left:last-child, .towers__right:last-child {
+  text-align: end;
+}
+
+.towers__left .info, .towers__right .info {
+  color: #fff;
+}
+
+.towers__left .info__title, .towers__right .info__title {
+  font-size: 3.3125rem;
+  font-weight: 300;
+  line-height: 57px;
+  max-width: 270px;
+  margin-bottom: 1.5rem;
+}
+
+.towers__left .info__text, .towers__right .info__text {
+  max-width: 250px;
+}
+
+.towers__left .info__btn, .towers__right .info__btn {
+  position: absolute;
+  bottom: 0;
+  right: 1rem;
+  width: 20.3125rem;
+  height: 10rem;
+  padding: 1rem;
+  background: #0062ff;
+}
+
+.towers__left .info__btn .btn__link, .towers__right .info__btn .btn__link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.towers__left .info__btn .btn__link .fa-solid, .towers__right .info__btn .btn__link .fa-solid {
+  margin-left: 95%;
+}
+
+.towers__left .info__btn .btn__link .btn__text, .towers__right .info__btn .btn__link .btn__text {
+  max-width: 12.5rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.625rem;
+}
+
+.towers__right {
+  background: url("/img/bg-tower-right.jpeg") center/cover no-repeat;
+}
+
+.towers__right .info {
+  color: #262626;
+}
+
+.towers__right .info__title {
+  text-align: left;
+}
+
+.towers__right .info__text {
+  text-align: start;
+  max-width: 250px;
+}
+
+.towers__right .info__btn .btn__text {
+  max-width: 12.5rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.625rem;
+  text-align: left;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
