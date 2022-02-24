@@ -12,7 +12,7 @@
     width: 50%;
     height: rem(650);
     padding: rem(16) rem(32) 0;
-    background: url("/img/bg-tower-left.jpeg") center / cover no-repeat;
+    background: url("../img/bg-tower-left.jpeg") center / cover no-repeat;
     &:last-child {
       text-align: end;
     }
@@ -53,7 +53,7 @@
     }
   }
   &__right {
-    background: url("/img/bg-tower-right.jpeg") center / cover no-repeat;
+    background: url("../img/bg-tower-right.jpeg") center / cover no-repeat;
     .info {
       color: $fontSizeColor;
       &__title {
