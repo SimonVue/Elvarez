@@ -631,7 +631,6 @@ hr {
   top: 51px;
 }
 
-/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
 .cards-news {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -642,10 +641,27 @@ hr {
   padding: 2rem 0;
 }
 
+@media (max-width: 76.375rem) {
+  .cards-news {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+}
+
 .cards-news__title {
   font-size: 1rem;
   font-weight: 600;
   padding-left: 1.875rem;
+}
+
+@media (max-width: 76.375rem) {
+  .cards-news__title {
+    margin-bottom: 1.875rem;
+    padding-left: 8px;
+  }
 }
 
 .cards-news .carousel {
@@ -653,6 +669,26 @@ hr {
   width: 1050px;
   height: 34.375rem;
   background: #fff;
+  overflow: hidden;
+}
+
+@media (max-width: 1222px) {
+  .cards-news .carousel {
+    width: 61.125rem;
+  }
+}
+
+@media (max-width: 980px) {
+  .cards-news .carousel {
+    width: 40.75rem;
+  }
+}
+
+@media (max-width: 41.875rem) {
+  .cards-news .carousel {
+    width: 100%;
+    height: 32.5rem;
+  }
 }
 
 .cards-news .carousel__products {
@@ -662,16 +698,23 @@ hr {
 .cards-news .carousel img {
   width: 100%;
   height: auto;
-  margin: 0;
+  margin: 0 auto;
   /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
   display: block;
 }
 
 .cards-news .carousel .card {
-  width: 20.8125rem;
+  width: 310px;
   height: 30rem;
   margin: 0 auto;
   background: #f2f4f8;
+  padding: 0;
+}
+
+@media (max-width: 710px) {
+  .cards-news .carousel .card {
+    width: 19.375rem;
+  }
 }
 
 .cards-news .carousel .card:hover {
@@ -680,8 +723,8 @@ hr {
 
 .cards-news .carousel .card__info {
   font-size: 1rem;
-  padding: 1rem;
   line-height: 20px;
+  padding: 1rem;
 }
 
 .cards-news .carousel .card__info_title {
@@ -733,18 +776,42 @@ hr {
 }
 
 .cards-news .carousel .prev {
-  right: 4.375rem;
+  right: 140px;
   content: "\f053";
 }
 
+@media (max-width: 76.375rem) {
+  .cards-news .carousel .prev {
+    right: 70px;
+  }
+}
+
 .cards-news .carousel .next {
-  right: 1.25rem;
+  right: 80px;
+}
+
+@media (max-width: 76.375rem) {
+  .cards-news .carousel .next {
+    right: 10px;
+  }
 }
 
 .cards-news .gallery {
-  width: 1040px;
+  width: 970px;
   overflow: hidden;
   height: 480px;
+}
+
+@media (max-width: 61.25rem) {
+  .cards-news .gallery {
+    width: 40.875rem;
+  }
+}
+
+@media (max-width: 41.875rem) {
+  .cards-news .gallery {
+    width: 19.375rem;
+  }
 }
 
 .cards-news .gallery ul {
@@ -763,7 +830,13 @@ hr {
 
 .cards-news .gallery li {
   display: inline-block;
-  padding: 0 16px 0 0;
+  padding: 0 8px;
+}
+
+@media (max-width: 41.875rem) {
+  .cards-news .gallery li {
+    padding: 0 16px 0 0;
+  }
 }
 
 .cards-news__products {
@@ -787,7 +860,6 @@ hr {
   font-weight: 300;
 }
 
-/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
 .technology {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -840,7 +912,6 @@ hr {
   color: #0062ff;
 }
 
-/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
 .towers {
   display: -webkit-box;
   display: -ms-flexbox;
