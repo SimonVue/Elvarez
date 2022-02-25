@@ -1269,7 +1269,7 @@ footer {
 @media (max-width: 30.3125rem) {
   .footer__menu {
     display: block;
-    padding: 0 1.25rem;
+    padding: 0 0.625rem;
   }
 }
 
@@ -1312,7 +1312,7 @@ footer {
 }
 
 .footer__menu .menu__item {
-  font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1440 - 320)));
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1440 - 320)));
   font-weight: 300;
   margin-bottom: 0.4375rem;
 }
@@ -1320,6 +1320,7 @@ footer {
 @media (max-width: 26.6875rem) {
   .footer__menu .menu__item {
     line-height: calc(18px + (18 - 18) * ((100vw - 320px) / (1440 - 320)));
+    margin-bottom: 0.75rem;
   }
 }
 
@@ -1356,7 +1357,13 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    gap: 8px;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 30.3125rem) {
+  .footer__submenu_item {
+    margin-bottom: 0.625rem;
   }
 }
 
@@ -1375,7 +1382,7 @@ footer {
   .footer__submenu .left,
   .footer__submenu .right {
     display: block;
-    line-height: 24px;
+    line-height: 18px;
     text-align: left;
   }
 }
@@ -1383,7 +1390,7 @@ footer {
 .footer__submenu_link {
   color: #5a5a5a;
   font-weight: 300;
-  font-size: calc(12px + (16 - 12) * ((100vw - 320px) / (1440 - 320)));
+  font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1440 - 320)));
 }
 
 * {
