@@ -2,15 +2,15 @@
 
 .header_menu {
   position: absolute;
-  top: -100%;
+  top: 51px;
   left: 0;
-  width: 300px;
-  height: calc(100vh - 112px);
+  width: 270px;
+  height: rem(706);
   background: #d9d9d9;
   padding: 48px 0;
-  display: block;
+  display: none;
   z-index: 0;
-  transition: 0.4s;
+  transition: 14s;
   @media (max-width: rem(767)) {
     display: none;
   }
@@ -73,7 +73,7 @@
     top: 0;
     left: 99%;
     width: 500px;
-    height: calc(100vh - 112px);
+    height: rem(706);
     background: $mainColor;
     list-style: none;
     text-align-last: left;
@@ -101,5 +101,5 @@
   opacity: 1;
 }
 .openMenu {
-  top: 51px;
+  display: block;
 }
