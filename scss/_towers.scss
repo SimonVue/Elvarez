@@ -1,5 +1,8 @@
 .towers {
   display: flex;
+  @media (max-width: rem(767)) {
+    flex-direction: column;
+  }
 
   &__left,
   &__right {
@@ -11,17 +14,35 @@
     height: rem(650);
     padding: rem(16) rem(32) 0;
     background: url("../img/bg-tower-left.jpeg") center / cover no-repeat;
+    @media (max-width: 1023px) {
+      max-height: 550px;
+    }
+    @media (max-width: rem(767)) {
+      padding: rem(30) rem(15) 0;
+      margin: 0 auto;
+      width: 100%;
+    }
+
     &:last-child {
       text-align: end;
     }
     .info {
       color: $whiteSize;
+      @media (max-width: rem(427)) {
+        margin: 0 auto;
+      }
       &__title {
-        font-size: rem(53);
+        font-size: calc(20px + (53 - 20) * ((100vw - 320px) / (1440 - 320))); //rem(53);
         font-weight: 300;
-        line-height: 57px;
+        line-height: calc(24px + (57 - 24) * ((100vw - 320px) / (1440 - 320))); //57px;
         max-width: 270px;
         margin-bottom: rem(24);
+        @media (max-width: rem(767)) {
+          text-align: center;
+          font-size: rem(24);
+          line-height: rem(34);
+          margin-bottom: rem(40);
+        }
       }
       &__text {
         max-width: 250px;
@@ -34,6 +55,14 @@
         height: rem(160);
         padding: rem(16);
         background: $blueColor;
+        @media (max-width: rem(427)) {
+          position: static;
+          margin: 0 auto;
+        }
+        @media (max-width: rem(375)) {
+          width: 100%;
+          height: rem(125);
+        }
         .btn__link {
           text-decoration: none;
           color: $whiteSize;
@@ -45,6 +74,12 @@
             font-size: rem(20);
             font-weight: 300;
             line-height: rem(26);
+            @media (max-width: rem(427)) {
+              font-size: rem(18);
+            }
+            @media (max-width: rem(375)) {
+              font-size: rem(16);
+            }
           }
         }
       }
