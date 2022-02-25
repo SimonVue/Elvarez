@@ -660,7 +660,7 @@ hr {
 @media (max-width: 76.375rem) {
   .cards-news__title {
     margin-bottom: 1.875rem;
-    padding-left: 8px;
+    padding-left: 30px;
   }
 }
 
@@ -675,6 +675,7 @@ hr {
 @media (max-width: 1222px) {
   .cards-news .carousel {
     width: 61.125rem;
+    margin: 0 auto;
   }
 }
 
@@ -883,42 +884,102 @@ hr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 2rem 1.125rem;
+}
+
+@media (max-width: 76.375rem) {
+  .technology {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
 }
 
 .technology__title {
   font-size: 1rem;
   font-weight: 600;
-  width: 11.25rem;
+  max-width: 11.25rem;
 }
 
-.card {
+@media (max-width: 76.375rem) {
+  .technology__title {
+    max-width: 23.125rem;
+    padding-left: 14px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 61.25rem) {
+  .technology__title {
+    margin: 0 auto 30px;
+    text-align: center;
+  }
+}
+
+.technology .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 64.0625rem;
+  gap: 16px;
+  padding-right: 64px;
+}
+
+@media (max-width: 76.375rem) {
+  .technology .cards {
+    width: 6.25%rem;
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 61.25rem) {
+  .technology .cards {
+    padding: 0;
+    margin: 0 auto;
+  }
+}
+
+.technology .cards .card {
   display: block;
   padding: 1rem;
-  width: 28.75rem;
+  width: 450px;
   height: 30rem;
-  margin-left: 1rem;
   background: #f2f4f8;
 }
 
-.card:first-child {
-  background: #fff;
+@media (max-width: 76.375rem) {
+  .technology .cards .card {
+    width: 97.333%;
+    height: auto;
+  }
 }
 
-.card__title {
+.technology .cards .card__title {
   margin-bottom: 1.875rem;
 }
 
-.card .card__text {
+.technology .cards .card .card__text {
   width: 11.5625rem;
 }
 
-.card__link {
+.technology .cards .card__link {
   list-style: none;
   font-weight: 300;
 }
 
-.card__link::before {
+@media (max-width: 61.25rem) {
+  .technology .cards .card__link {
+    font-size: 0.75rem;
+  }
+}
+
+.technology .cards .card__link::before {
   content: "-";
   top: 0;
   left: 0;
@@ -926,7 +987,7 @@ hr {
   color: #0062ff;
 }
 
-.card__link a {
+.technology .cards .card__link a {
   text-decoration: none;
   color: #0062ff;
 }
@@ -1094,13 +1155,6 @@ html {
 }
 
 body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   font-family: "Lato", sans-serif;
   font-size: 1rem;
   color: #262626;

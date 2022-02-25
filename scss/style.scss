@@ -7,7 +7,7 @@
 @import "promo";
 @import "news";
 @import "cards-news";
-@import "technology";
+@import "_technology.scss";
 @import "towers";
 @import "footer";
 
@@ -22,8 +22,8 @@ html {
 }
 
 body {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   font-family: "Lato", sans-serif;
   font-size: rem(16);
   color: $fontSizeColor;
