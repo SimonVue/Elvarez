@@ -54,6 +54,9 @@
       @media (max-width: 710px) {
         width: rem(310);
       }
+      @media (max-width: 670px) {
+        position: relative;
+      }
       &:hover {
         background: #d8dbe1;
       }
@@ -110,11 +113,31 @@
       @media (max-width: rem(1222)) {
         right: 70px;
       }
+      @media (max-width: rem(670)) {
+        right: 260px;
+      }
+      @media (max-width: rem(426)) {
+        right: 130px;
+        bottom: 60px;
+      }
+      @media (max-width: rem(321)) {
+        right: 100px;
+      }
     }
     .next {
       right: 80px; //rem(20);
       @media (max-width: rem(1222)) {
         right: 10px;
+      }
+      @media (max-width: rem(670)) {
+        right: 200px;
+      }
+      @media (max-width: rem(426)) {
+        right: 70px;
+        bottom: 60px;
+      }
+      @media (max-width: rem(321)) {
+        right: 40px;
       }
     }
   }
@@ -159,6 +182,9 @@
     @media (max-width: rem(1222)) {
       margin-bottom: rem(20);
     }
+    @media (max-width: rem(427)) {
+      margin: 0 auto rem(20);
+    }
   }
   &_title {
     width: 150px;
@@ -169,14 +195,15 @@
     }
     @media (max-width: rem(427)) {
       text-align: center;
+      margin: 0 auto 30px;
     }
   }
   &_link {
     text-decoration: none;
     color: $blueColor;
     font-weight: 300;
-    // @media (max-width: rem(1222)) {
-    //   margin-bottom: rem(20);
-    // }
+    @media (max-width: rem(1222)) {
+      margin-bottom: rem(20);
+    }
   }
 }
