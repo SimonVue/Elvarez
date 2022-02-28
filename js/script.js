@@ -4,7 +4,7 @@ document.querySelector('.menu-burger').onclick = function () {
 };
 
 function open() {
-  //document.body.classList.toggle('_lock');
+  document.body.classList.toggle('_lock');
   document.getElementById('nav-menu').classList.toggle('_open');
   document.querySelector('.menu-burger').classList.toggle('_close');
 }
@@ -32,7 +32,7 @@ document.getElementById('header-button').onclick = function () {
 };
 
 function openHeaderMenu() {
-  //document.body.classList.toggle('_lock');
+  document.body.classList.toggle('_lock');
   document.querySelector('.header_menu').classList.toggle('openMenu');
 }
 
