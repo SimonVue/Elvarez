@@ -10,7 +10,7 @@
   <title>Alvares</title>
 </head>
 
-<body>
+<body class="content">
   <header class="header">
     <div class="header__logo">
       <a href="" class="Logo_img"><img src="img/logo.jpeg" alt=""></a>
@@ -30,6 +30,27 @@
       </label>
     </div>
     <div class="header__profile"><a href="#"><i class="fa-solid fa-user"></i></a></div>
+
+    <!-------------------- Header menu -------------------->
+    <div class="header_menu" id=" panelOne">
+      <!-- <button class=" header-menu__button menu_item">1 Продукты и решения</button> -->
+      <div class="header-menu__panel">
+        <li class="header_menu__panel_item"><a class="header_menu__panel_link" id="first-submenu-btn" href="#">Основные
+            темы</a>
+          <ul class="header-menu__submenu" id="first-submenu-list">
+            <li class="header-menu__submenu-item"><a class="header-menu__submenu-link" href="#">Контейнеры</a></li>
+            <li class="header-menu__submenu-item"><a class="header-menu__submenu-link" href="#">Базы данных</a></li>
+            <li class="header-menu__submenu-item"><a class="header-menu__submenu-link" href="#">Гибридное облако</a>
+            </li>
+            <li class="header-menu__submenu-item"><a class="header-menu__submenu-link" href="#">DevOps</a></li>
+          </ul>
+        </li>
+        <li class="header_menu__panel_item"><a class="header_menu__panel_link" href="#">Автоматизация</a></li>
+        <li class="header_menu__panel_item"><a class="header_menu__panel_link" href="#">Безопасность</a></li>
+        <li class="header_menu__panel_item"><a class="header_menu__panel_link" href="#">Облако</a></li>
+        <li class="header_menu__panel_item"><a class="header_menu__panel_link" href="#">Аналитика</a></li>
+      </div>
+    </div>
 
     <!------------------------ Nav-menu BURGER-MENU --------------------->
     <div class="nav__menu" id="nav-menu">
@@ -69,34 +90,6 @@
       <span></span>
     </div>
   </header>
-
-  <!-------------------- Header menu -------------------->
-  <div class="header_menu" id=" panelOne">
-    <!-- <button class=" header-menu__button menu_item">1 Продукты и решения</button> -->
-    <div class="header-menu__panel">
-      <li class="header_menu__panel_item"><a class="header_menu__panel_link" id="first-submenu-btn" href="#">Основные
-          темы</a>
-        <ul class="header-menu__submenu" id="first-submenu-list">
-          <li class="header-menu__submenu-item"><a class="header-menu__submenu-link" href="#">Контейнеры</a></li>
-          <li class="header-menu__submenu-item"><a class="header-menu__submenu-link" href="#">Базы данных</a></li>
-          <li class="header-menu__submenu-item"><a class="header-menu__submenu-link" href="#">Гибридное облако</a></li>
-          <li class="header-menu__submenu-item"><a class="header-menu__submenu-link" href="#">DevOps</a></li>
-        </ul>
-      </li>
-      <!-- <li class="header_menu__panel_item"><a class="header_menu__panel_link" href="#">Лучшие продукты</a>
-        <ul class="header-menu__submenu">
-          <li class="header-menu__submenu-item"><a class="header-menu__submenu-link" href="#">1</a></li>
-          <li class="header-menu__submenu-item"><a class="header-menu__submenu-link" href="#">Б1</a></li>
-          <li class="header-menu__submenu-item"><a class="header-menu__submenu-link" href="#">23</a></li>
-          <li class="header-menu__submenu-item"><a class="header-menu__submenu-link" href="#">34</a></li>
-        </ul>
-      </li> -->
-      <li class="header_menu__panel_item"><a class="header_menu__panel_link" href="#">Автоматизация</a></li>
-      <li class="header_menu__panel_item"><a class="header_menu__panel_link" href="#">Безопасность</a></li>
-      <li class="header_menu__panel_item"><a class="header_menu__panel_link" href="#">Облако</a></li>
-      <li class="header_menu__panel_item"><a class="header_menu__panel_link" href="#">Аналитика</a></li>
-    </div>
-  </div>
 
   <!---------------------- promo ------------------------>
   <section class="promo" style="background-image: url('./img/bg-promo.jpeg');">

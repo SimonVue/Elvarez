@@ -371,10 +371,6 @@ label {
           transform: rotate(45deg) translate(0px, 50%);
 }
 
-._lock {
-  overflow: hidden;
-}
-
 .nav__menu {
   display: none;
 }
@@ -1430,5 +1426,9 @@ a {
   text-decoration: none;
   list-style: none;
   color: #262626;
+}
+
+._lock {
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */

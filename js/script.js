@@ -1,13 +1,4 @@
-/* ========================= Burger - menu ======================== */
-document.querySelector('.menu-burger').onclick = function () {
-  open()
-};
 
-function open() {
-  document.body.classList.toggle('_lock');
-  document.getElementById('nav-menu').classList.toggle('_open');
-  document.querySelector('.menu-burger').classList.toggle('_close');
-}
 
 /* ========================= Accordion ======================== */
 const acc = document.getElementsByClassName("accordion__button");
@@ -32,7 +23,7 @@ document.getElementById('header-button').onclick = function () {
 };
 
 function openHeaderMenu() {
-  document.body.classList.toggle('_lock');
+  //document.body.classList.toggle('_lock');
   document.querySelector('.header_menu').classList.toggle('openMenu');
 }
 
@@ -45,6 +36,19 @@ function openSubmenuList() {
   //document.body.classList.toggle('_lock');
   document.getElementById('first-submenu-list').classList.toggle('open-submenu-list');
 }
+
+
+/* ========================= Burger - menu ======================== */
+document.querySelector('.menu-burger').onclick = function () {
+  open()
+};
+
+function open() {
+  document.body.classList.toggle('_lock');
+  document.getElementById('nav-menu').classList.toggle('_open');
+  document.querySelector('.menu-burger').classList.toggle('_close');
+}
+
 
 
 /* ============================ Carusel ========================== */
