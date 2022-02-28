@@ -39,7 +39,7 @@ footer {
     margin-bottom: rem(15);
   }
   .menu__item {
-    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1440 - 320)));
+    font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1440 - 320)));
     font-weight: 300;
     margin-bottom: rem(7);
     @media (max-width: rem(427)) {
@@ -93,8 +93,9 @@ footer {
   &_link {
     color: $footerColor;
     font-weight: 300;
-    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1440 - 320)));
+    font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1440 - 320)));
     @media (max-width: rem(485)) {
+      font-size: rem(14);
     }
   }
 }

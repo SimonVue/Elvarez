@@ -22,14 +22,11 @@ html {
 }
 
 body {
-  // display: flex;
-  // flex-direction: column;
   font-family: "Lato", sans-serif;
   font-size: rem(16);
   color: $fontSizeColor;
   line-height: rem(24);
   font-weight: normal;
-  //height: 100%;
 }
 
 .content {
@@ -41,4 +38,7 @@ a {
   text-decoration: none;
   list-style: none;
   color: $fontSizeColor;
+}
+._lock {
+  overflow: hidden;
 }
