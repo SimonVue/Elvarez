@@ -1,6 +1,5 @@
-//@import "_mixin.scss";
-
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -26,7 +25,7 @@
   @media (max-width: rem(427)) {
     margin-right: rem(80);
   }
-  img {
+  .logo_img {
     width: auto;
     height: 100%;
   }
@@ -47,24 +46,13 @@
 }
 
 .menu_item {
-  position: relative;
+  //position: relative;
   list-style: none;
   text-align: center;
   padding-bottom: rem(5);
-  transition: 3s;
+  //transition: 3s;
   line-height: rem(16);
 
-  &:hover::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    display: block;
-    width: 100%;
-    height: rem(2.4);
-    background-color: $blueColor;
-    opacity: 1;
-  }
   a {
     text-decoration: none;
     color: $fontSizeColor;

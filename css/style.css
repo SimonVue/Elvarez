@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
 .header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,7 +47,7 @@
   }
 }
 
-.header img {
+.header .logo_img {
   width: auto;
   height: 100%;
 }
@@ -74,26 +75,10 @@
 }
 
 .menu_item {
-  position: relative;
   list-style: none;
   text-align: center;
   padding-bottom: 0.3125rem;
-  -webkit-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
   line-height: 1rem;
-}
-
-.menu_item:hover::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  display: block;
-  width: 100%;
-  height: 0.15rem;
-  background-color: #0062ff;
-  opacity: 1;
 }
 
 .menu_item a {
@@ -178,6 +163,114 @@ label {
   color: #0062ff;
 }
 
+ul.menu div.pod-punkt {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 600px;
+  height: 708px;
+  background: #d9d9d9;
+  padding: 48px 0;
+  z-index: 0;
+}
+
+@media (max-width: 59.4375rem) {
+  ul.menu div.pod-punkt {
+    top: 69px;
+    height: 681px;
+  }
+}
+
+ul.menu li.punkt {
+  padding: 15px 0;
+  border-bottom: 3px solid transparent;
+}
+
+ul.menu li.punkt:hover {
+  border-bottom: 3px solid #0062ff;
+}
+
+ul.menu li.punkt:hover div.pod-punkt {
+  display: block;
+}
+
+ul.menu .drop__list_item {
+  text-align: right;
+  font-weight: 300;
+  list-style: none;
+  text-decoration: none;
+  color: #262626;
+}
+
+ul.menu a.drop__list_link {
+  display: block;
+  font-size: 1.375rem;
+  padding: 16px 30px 16px 0;
+}
+
+@media (max-width: 59.4375rem) {
+  ul.menu a.drop__list_link {
+    font-size: 1.125rem;
+  }
+}
+
+ul.menu a.drop__list_link:hover {
+  background: #0062ff;
+  color: #ececec;
+}
+
+.submenu__pod-punkt {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 600px;
+  width: 841px;
+  height: 44.25rem;
+  background: #ececec;
+  padding: 48px 0 48px 30px;
+  text-align: start;
+}
+
+.submenu__title {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  color: #0062ff;
+}
+
+.submenu__text {
+  width: 20rem;
+  color: #262626;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.submenu__item a {
+  display: inline-block;
+  padding: 16px 0 16px;
+  color: #0062ff;
+  font-size: 1.125rem;
+}
+
+.submenu__item a:hover {
+  text-decoration: underline;
+}
+
+.submenu__img {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 25rem;
+  height: auto;
+}
+
+li.submenu:hover div.submenu__pod-punkt {
+  display: block;
+}
+
 .header_menu {
   position: absolute;
   top: 51px;
@@ -188,9 +281,6 @@ label {
   padding: 48px 0;
   display: none;
   z-index: 0;
-  -webkit-transition: 14s;
-  -o-transition: 14s;
-  transition: 14s;
 }
 
 @media (max-width: 47.9375rem) {
