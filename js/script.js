@@ -1,3 +1,14 @@
+/* ========================= Burger - menu ======================== */
+document.querySelector('.menu-burger').onclick = function () {
+  open()
+};
+
+function open() {
+  document.body.classList.toggle('_lock');
+  document.getElementById('nav-menu').classList.toggle('_open');
+  document.querySelector('.menu-burger').classList.toggle('_close');
+}
+
 
 
 /* ========================= Accordion ======================== */
@@ -18,36 +29,18 @@ for (let i = 0; i < acc.length; i++) {
 
 /* ========================= Header_menu ======================== */
 
-document.getElementById('header-button').onclick = function () {
-  openHeaderMenu()
-};
+// document.getElementById('header-button').onclick = function () {
+//   openHeaderMenu()
+// };
 
-function openHeaderMenu() {
-  //document.body.classList.toggle('_lock');
-  document.querySelector('.header_menu').classList.toggle('openMenu');
-}
-
-/* ====================== First submenu list ======================= */
-document.getElementById('first-submenu-btn').onclick = function () {
-  openSubmenuList()
-};
-
-function openSubmenuList() {
-  //document.body.classList.toggle('_lock');
-  document.getElementById('first-submenu-list').classList.toggle('open-submenu-list');
-}
+// function openHeaderMenu() {
+//   //document.body.classList.toggle('_lock');
+//   document.querySelector('.header_menu').classList.toggle('openMenu');
+// }
 
 
-/* ========================= Burger - menu ======================== */
-document.querySelector('.menu-burger').onclick = function () {
-  open()
-};
 
-function open() {
-  document.body.classList.toggle('_lock');
-  document.getElementById('nav-menu').classList.toggle('_open');
-  document.querySelector('.menu-burger').classList.toggle('_close');
-}
+
 
 
 
