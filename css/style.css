@@ -75,7 +75,6 @@
 }
 
 .menu_item {
-  position: relative;
   list-style: none;
   text-align: center;
   padding-bottom: 0.3125rem;
@@ -164,11 +163,15 @@ label {
   color: #0062ff;
 }
 
+.header {
+  position: relative;
+}
+
 ul.menu div.pod-punkt {
   display: none;
   position: absolute;
   top: 50px;
-  left: -190px;
+  left: 0;
   width: 600px;
   height: 708px;
   background: #d9d9d9;
@@ -221,10 +224,6 @@ ul.menu a.drop__list_link:hover {
   color: #ececec;
 }
 
-.pod-produkt {
-  position: relative;
-}
-
 .submenu__pod-punkt {
   display: none;
   position: absolute;
@@ -238,7 +237,7 @@ ul.menu a.drop__list_link:hover {
 }
 
 .submenu__title {
-  font-size: 3.125rem;
+  font-size: 2.5rem;
   font-weight: 300;
   margin-bottom: 2.5rem;
   color: #0062ff;

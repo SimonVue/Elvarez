@@ -1,9 +1,12 @@
+.header {
+  position: relative;
+}
 ul.menu {
   div.pod-punkt {
     display: none;
     position: absolute;
     top: 50px;
-    left: -190px;
+    left: 0; //-190px;
     width: 600px;
     height: 708px;
     background: #d9d9d9;
@@ -46,7 +49,7 @@ ul.menu {
 }
 
 .pod-produkt {
-  position: relative;
+  //position: relative;
 }
 
 .submenu__pod-punkt {
@@ -62,7 +65,7 @@ ul.menu {
 }
 
 .submenu__title {
-  font-size: rem(50);
+  font-size: rem(40);
   font-weight: 300;
   margin-bottom: rem(40);
   color: $blueColor;
