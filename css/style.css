@@ -47,7 +47,7 @@
   }
 }
 
-.header img {
+.header .logo_img {
   width: auto;
   height: 100%;
 }
@@ -169,7 +169,7 @@ ul.menu div.pod-punkt {
   position: absolute;
   top: 50px;
   left: -190px;
-  width: 270px;
+  width: 600px;
   height: 708px;
   background: #d9d9d9;
   padding: 48px 0;
@@ -207,7 +207,7 @@ ul.menu .drop__list_item {
 ul.menu a.drop__list_link {
   display: block;
   font-size: 1.375rem;
-  padding: 16px 20px 16px 0;
+  padding: 16px 30px 16px 0;
 }
 
 @media (max-width: 59.4375rem) {
@@ -221,35 +221,55 @@ ul.menu a.drop__list_link:hover {
   color: #ececec;
 }
 
-.submenu {
+.pod-produkt {
   position: relative;
 }
 
 .submenu__pod-punkt {
   display: none;
   position: absolute;
-  top: -48px;
-  left: 270px;
-  width: 450px;
+  top: 0;
+  left: 600px;
+  width: 841px;
   height: 44.25rem;
   background: #ececec;
-  padding: 48px 0;
+  padding: 48px 0 48px 30px;
   text-align: start;
 }
 
-.submenu__item {
-  padding-left: 20px;
+.submenu__title {
+  font-size: 3.125rem;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+  color: #0062ff;
+}
+
+.submenu__text {
+  width: 20rem;
+  color: #262626;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+  font-weight: 300;
+  margin-bottom: 30px;
 }
 
 .submenu__item a {
   display: inline-block;
-  padding: 16px 0;
+  padding: 16px 0 16px;
   color: #0062ff;
-  font-size: 1.375rem;
+  font-size: 1.125rem;
 }
 
 .submenu__item a:hover {
   text-decoration: underline;
+}
+
+.submenu__img {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: 25rem;
+  height: auto;
 }
 
 li.submenu:hover div.submenu__pod-punkt {

@@ -4,7 +4,7 @@ ul.menu {
     position: absolute;
     top: 50px;
     left: -190px;
-    width: 270px;
+    width: 600px;
     height: 708px;
     background: #d9d9d9;
     padding: 48px 0;
@@ -34,7 +34,7 @@ ul.menu {
   a.drop__list_link {
     display: block;
     font-size: rem(22);
-    padding: 16px 20px 16px 0;
+    padding: 16px 30px 16px 0;
     @media (max-width: rem(951)) {
       font-size: rem(18);
     }
@@ -45,33 +45,55 @@ ul.menu {
   }
 }
 
-.submenu {
+.pod-produkt {
   position: relative;
 }
 
 .submenu__pod-punkt {
   display: none;
   position: absolute;
-  top: -48px;
-  left: 270px;
-  width: 450px;
+  top: 0;
+  left: 600px;
+  width: 841px;
   height: rem(708);
   background: $mainColor;
-  padding: 48px 0;
+  padding: 48px 0 48px 30px;
   text-align: start;
 }
 
+.submenu__title {
+  font-size: rem(50);
+  font-weight: 300;
+  margin-bottom: rem(40);
+  color: $blueColor;
+}
+
+.submenu__text {
+  width: rem(320);
+  color: $fontSizeColor;
+  line-height: rem(24);
+  font-size: rem(18);
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
 .submenu__item {
-  padding-left: 20px;
   a {
     display: inline-block;
-    padding: 16px 0;
+    padding: 16px 0 16px;
     color: $blueColor;
-    font-size: rem(22);
+    font-size: rem(18);
     &:hover {
       text-decoration: underline;
     }
   }
+}
+.submenu__img {
+  position: absolute;
+  top: 100px;
+  right: 100px;
+  width: rem(400);
+  height: auto;
 }
 
 li.submenu:hover div.submenu__pod-punkt {
