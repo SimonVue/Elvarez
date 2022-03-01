@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
 .header {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,22 +79,7 @@
   list-style: none;
   text-align: center;
   padding-bottom: 0.3125rem;
-  -webkit-transition: 3s;
-  -o-transition: 3s;
-  transition: 3s;
   line-height: 1rem;
-}
-
-.menu_item:hover::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  display: block;
-  width: 100%;
-  height: 0.15rem;
-  background-color: #0062ff;
-  opacity: 1;
 }
 
 .menu_item a {
@@ -178,6 +164,50 @@ label {
   color: #0062ff;
 }
 
+div.pod-punkt {
+  display: none;
+  position: absolute;
+  top: 50px;
+  left: -190px;
+  width: 270px;
+  height: 708px;
+  background: #d9d9d9;
+  padding: 48px 0;
+  z-index: 0;
+}
+
+li.punkt {
+  padding: 15px 0;
+  border-bottom: 3px solid transparent;
+}
+
+li.punkt:hover {
+  border-bottom: 3px solid #0062ff;
+}
+
+li.punkt:hover div.pod-punkt {
+  display: block;
+}
+
+.drop__list_item {
+  text-align: right;
+  font-weight: 300;
+  list-style: none;
+  text-decoration: none;
+  color: #262626;
+}
+
+a.drop__list_link {
+  display: block;
+  font-size: 1.375rem;
+  padding: 16px 20px 16px 0;
+}
+
+a.drop__list_link:hover {
+  background: #0062ff;
+  color: #ececec;
+}
+
 .header_menu {
   position: absolute;
   top: 51px;
@@ -188,9 +218,6 @@ label {
   padding: 48px 0;
   display: none;
   z-index: 0;
-  -webkit-transition: 14s;
-  -o-transition: 14s;
-  transition: 14s;
 }
 
 @media (max-width: 47.9375rem) {
