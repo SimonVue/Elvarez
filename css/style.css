@@ -164,7 +164,7 @@ label {
   color: #0062ff;
 }
 
-div.pod-punkt {
+ul.menu div.pod-punkt {
   display: none;
   position: absolute;
   top: 50px;
@@ -176,20 +176,27 @@ div.pod-punkt {
   z-index: 0;
 }
 
-li.punkt {
+@media (max-width: 59.4375rem) {
+  ul.menu div.pod-punkt {
+    top: 69px;
+    height: 681px;
+  }
+}
+
+ul.menu li.punkt {
   padding: 15px 0;
   border-bottom: 3px solid transparent;
 }
 
-li.punkt:hover {
+ul.menu li.punkt:hover {
   border-bottom: 3px solid #0062ff;
 }
 
-li.punkt:hover div.pod-punkt {
+ul.menu li.punkt:hover div.pod-punkt {
   display: block;
 }
 
-.drop__list_item {
+ul.menu .drop__list_item {
   text-align: right;
   font-weight: 300;
   list-style: none;
@@ -197,15 +204,56 @@ li.punkt:hover div.pod-punkt {
   color: #262626;
 }
 
-a.drop__list_link {
+ul.menu a.drop__list_link {
   display: block;
   font-size: 1.375rem;
   padding: 16px 20px 16px 0;
 }
 
-a.drop__list_link:hover {
+@media (max-width: 59.4375rem) {
+  ul.menu a.drop__list_link {
+    font-size: 1.125rem;
+  }
+}
+
+ul.menu a.drop__list_link:hover {
   background: #0062ff;
   color: #ececec;
+}
+
+.submenu {
+  position: relative;
+}
+
+.submenu__pod-punkt {
+  display: none;
+  position: absolute;
+  top: -48px;
+  left: 270px;
+  width: 450px;
+  height: 44.25rem;
+  background: #ececec;
+  padding: 48px 0;
+  text-align: start;
+}
+
+.submenu__item {
+  padding-left: 20px;
+}
+
+.submenu__item a {
+  display: inline-block;
+  padding: 16px 0;
+  color: #0062ff;
+  font-size: 1.375rem;
+}
+
+.submenu__item a:hover {
+  text-decoration: underline;
+}
+
+li.submenu:hover div.submenu__pod-punkt {
+  display: block;
 }
 
 .header_menu {
