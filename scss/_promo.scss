@@ -1,10 +1,9 @@
-//@import "mixin";
-
 .promo {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: url("bg-promo.jpeg") center / cover no-repeat;
+  background: linear-gradient(rgba(58, 58, 58, 0.3), rgba(239, 239, 239, 0.3)),
+    url("../img/bg-promo1.jpeg") center / cover no-repeat;
   height: rem(560);
   color: $mainColor;
   padding: rem(32) rem(16);
