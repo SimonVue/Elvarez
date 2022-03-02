@@ -1,31 +1,21 @@
-@import "_mixin.scss";
-
 .nav__menu {
   display: none;
   @media (max-width: 767px) {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 100%;
-    padding-top: rem(50);
+    min-height: 100%;
+    padding: rem(50) 0;
     margin: 0;
     border: none;
     background: $mainColor;
-    transition: 0.2s;
+    transition: 0.4s;
     position: fixed;
     overflow: hidden;
     z-index: 1;
     top: 0;
     right: -100%;
   }
-  // &::before {
-  //   content: "";
-  //   top: 0;
-  //   left: 0;
-  //   width: 100%;
-  //   height: rem(2);
-  //   background: $fontSizeColor;
-  // }
 }
 hr {
   height: rem(3);

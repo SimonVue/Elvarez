@@ -1,0 +1,209 @@
+.cards-news {
+  display: flex;
+  justify-content: space-between;
+  padding: rem(32) 0;
+  @media (max-width: rem(1222)) {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  &__title {
+    font-size: rem(16);
+    font-weight: 600;
+    padding-left: rem(30);
+    @media (max-width: rem(1222)) {
+      margin-bottom: rem(30);
+      padding-left: 30px;
+    }
+  }
+
+  .carousel {
+    position: relative;
+    width: 1050px;
+    height: rem(550);
+    background: #fff;
+    overflow: hidden;
+    @media (max-width: 1222px) {
+      width: rem(978);
+      margin: 0 auto;
+    }
+    @media (max-width: 980px) {
+      width: rem(652);
+    }
+    @media (max-width: rem(670)) {
+      width: 100%;
+      height: rem(520);
+    }
+
+    &__products {
+      background: $greyColor;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      /* делаем этот элемент блочным, чтобы убрать лишнее пространство вокруг картинок */
+      display: block;
+    }
+    .card {
+      width: 310px; //rem(333);
+      height: rem(480);
+      margin: 0 auto;
+      background: #f2f4f8;
+      padding: 0;
+      @media (max-width: 710px) {
+        width: rem(310);
+      }
+      @media (max-width: 670px) {
+        position: relative;
+      }
+      &:hover {
+        background: #d8dbe1;
+      }
+      &__info {
+        font-size: rem(16);
+        line-height: 20px;
+        padding: rem(16);
+
+        &_title {
+          font-size: rem(16);
+          color: $fontSizeColor;
+          font-weight: 600;
+          margin-bottom: rem(8);
+        }
+        &_text {
+          color: $fontSizeColor;
+          margin-bottom: rem(30);
+        }
+        .text-down {
+          margin-bottom: rem(75);
+        }
+        &_link {
+          color: $blueColor;
+          font-size: rem(22);
+        }
+      }
+    }
+    .card__products_card {
+      background: #fff;
+    }
+    .arrow {
+      width: rem(32);
+      height: rem(32);
+      position: absolute;
+      bottom: 0;
+      padding: 0;
+      background: $blueColor;
+      font-size: 24px;
+      line-height: 24px;
+      color: #fff;
+      border: none;
+      display: block;
+      &:focus {
+        outline: none;
+      }
+      &:hover {
+        background: #0052d5;
+        cursor: pointer;
+      }
+    }
+    .prev {
+      right: 140px; //rem(70);
+      content: "\f053";
+      @media (max-width: rem(1222)) {
+        right: 70px;
+      }
+      @media (max-width: rem(670)) {
+        right: 260px;
+      }
+      @media (max-width: rem(426)) {
+        right: 130px;
+        bottom: 60px;
+      }
+      @media (max-width: rem(321)) {
+        right: 100px;
+      }
+    }
+    .next {
+      right: 80px; //rem(20);
+      @media (max-width: rem(1222)) {
+        right: 10px;
+      }
+      @media (max-width: rem(670)) {
+        right: 200px;
+      }
+      @media (max-width: rem(426)) {
+        right: 70px;
+        bottom: 60px;
+      }
+      @media (max-width: rem(321)) {
+        right: 40px;
+      }
+    }
+  }
+  .gallery {
+    width: 970px; //1040px;
+    overflow: hidden;
+    height: 480px;
+    @media (max-width: rem(980)) {
+      width: rem(654);
+    }
+    @media (max-width: rem(670)) {
+      width: rem(310);
+      margin: 0 auto;
+    }
+
+    ul {
+      height: 480px;
+      width: 9999px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      transition: margin-left 250ms;
+      /* удаляем пустое пространство между элементами li, у которых установлен inline-block */
+      /* http://davidwalsh.name/remove-whitespace-inline-block */
+      font-size: 0;
+    }
+    li {
+      display: inline-block;
+      padding: 0 8px;
+      @media (max-width: rem(670)) {
+        padding: 0 16px 0 0;
+      }
+    }
+  }
+}
+
+.cards-news__products {
+  background: $greyColor;
+  &_left-block {
+    padding: 0 rem(20);
+    text-align: left;
+    @media (max-width: rem(1222)) {
+      margin-bottom: rem(20);
+    }
+    @media (max-width: rem(427)) {
+      margin: 0 auto rem(20);
+    }
+  }
+  &_title {
+    width: 150px;
+    margin-bottom: 30px;
+    padding: 0;
+    @media (max-width: rem(1222)) {
+      width: calc(240px + (370 - 240) * ((100vw - 320px) / (700 - 320)));
+    }
+    @media (max-width: rem(427)) {
+      text-align: center;
+      margin: 0 auto 30px;
+    }
+  }
+  &_link {
+    text-decoration: none;
+    color: $blueColor;
+    font-weight: 300;
+    @media (max-width: rem(1222)) {
+      margin-bottom: rem(20);
+    }
+  }
+}

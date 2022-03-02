@@ -1,1 +1,102 @@
-@import "_mixin";
+.header_menu {
+  position: absolute;
+  top: 51px;
+  left: 0;
+  width: 270px;
+  height: rem(706);
+  background: #d9d9d9;
+  padding: 48px 0;
+  display: none;
+  z-index: 0;
+  @media (max-width: rem(767)) {
+    display: none;
+  }
+
+  &__button {
+    width: 100%;
+    font-family: "Noto Sans", sans-serif;
+    font-size: rem(16);
+    line-height: 27px;
+    color: $fontSizeColor;
+    cursor: pointer;
+    padding-right: 20px;
+    text-align: left;
+    background: $mainColor;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+
+    &:after {
+      font-family: FontAwesome, serif;
+      content: "\+";
+      font-size: rem(16);
+      color: $fontSizeColor;
+      float: right;
+      margin-left: 5px;
+    }
+  }
+
+  &__panel {
+    color: $fontSizeColor;
+    line-height: 27px;
+    max-width: 1100px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    //margin-left: 10px;
+  }
+  &__panel_item {
+    text-align: right;
+    font-size: rem(22);
+    font-weight: 300;
+    padding: 12px 20px 12px 0;
+    list-style: none;
+    transition: 0.3s;
+    &:hover {
+      background: $blueColor;
+    }
+  }
+  &__panel_link {
+    text-decoration: none;
+    color: $fontSizeColor;
+    &:hover {
+      color: $mainColor;
+    }
+  }
+}
+.header-menu {
+  &__submenu {
+    position: absolute;
+    top: 0;
+    left: 99%;
+    width: 500px;
+    height: rem(706);
+    background: $mainColor;
+    list-style: none;
+    text-align-last: left;
+    padding: 48px 20px;
+    transition: 0.2s;
+    z-index: 0;
+    opacity: 0;
+  }
+
+  &__submenu-item {
+    font-size: rem(20);
+    font-weight: 300;
+    padding: 12px 0;
+    transition: 0.3s;
+  }
+  &__submenu-link {
+    text-decoration: none;
+    color: $blueColor;
+    &:hover {
+      border-bottom: 2px solid $blueColor;
+    }
+  }
+}
+.open-submenu-list {
+  opacity: 1;
+}
+.openMenu {
+  display: block;
+}

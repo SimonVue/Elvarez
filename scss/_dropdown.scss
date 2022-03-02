@@ -1,0 +1,125 @@
+ul.menu {
+  div.pod-punkt {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -50px;
+    width: 200px;
+    height: 708px;
+    background: #d9d9d9;
+    padding: 48px 0;
+    z-index: 0;
+    @media (max-width: rem(1438)) {
+      top: 50px;
+      height: 690px;
+      padding: 25px 0;
+    }
+  }
+
+  li.punkt {
+    position: relative;
+    padding: 15px 0;
+    border-bottom: 3px solid transparent;
+    &:hover {
+      border-bottom: 3px solid $blueColor;
+    }
+  }
+  li.punkt:hover div.pod-punkt {
+    display: block;
+  }
+  .drop__list_item {
+    text-align: right;
+    font-weight: 300;
+    list-style: none;
+    text-decoration: none;
+    color: $fontSizeColor;
+  }
+  a.drop__list_link {
+    display: block;
+    font-size: rem(18);
+    line-height: 24px;
+    padding: 16px 30px 16px 0;
+    &:hover {
+      background: $blueColor;
+      color: $mainColor;
+    }
+  }
+}
+
+.pod-produkt {
+  //position: relative;
+}
+
+.submenu__pod-punkt {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 200px;
+  width: 355px;
+  height: rem(708);
+  background: $mainColor;
+  padding: 48px 0 48px 30px;
+  text-align: start;
+  @media (max-width: rem(1438)) {
+    top: 0px;
+    height: 688px;
+    width: rem(253);
+    padding: 25px 15px 25px 25px;
+  }
+}
+
+.submenu__title {
+  font-size: rem(32);
+  line-height: 36px;
+  font-weight: 300;
+  margin-bottom: rem(40);
+  color: $blueColor;
+  @media (max-width: rem(1438)) {
+    margin-bottom: rem(25);
+    font-size: rem(24);
+  }
+}
+
+.submenu__text {
+  max-width: rem(320);
+  color: $fontSizeColor;
+  line-height: rem(24);
+  font-size: rem(16);
+  font-weight: 300;
+  margin-bottom: 30px;
+  @media (max-width: rem(1438)) {
+    font-size: rem(12);
+  }
+}
+
+.submenu__item {
+  a {
+    display: inline-block;
+    padding: 10px 0;
+    color: $blueColor;
+    font-size: rem(18);
+    line-height: 24px;
+    @media (max-width: rem(1438)) {
+      font-size: rem(14);
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.submenu__img {
+  position: absolute;
+  top: 450px;
+  left: 100px;
+  width: rem(150);
+  height: auto;
+  @media (max-width: rem(1438)) {
+    width: rem(100);
+    top: 450px;
+    left: 80px;
+  }
+}
+
+li.submenu:hover div.submenu__pod-punkt {
+  display: block;
+}

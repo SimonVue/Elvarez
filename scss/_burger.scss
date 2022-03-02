@@ -1,8 +1,6 @@
-@import "_mixin.scss";
-
 .menu-burger {
 	display: none;
-	@media (max-width: rem(767)) {
+	@media (max-width: rem(1023)) {
 		display: block;
 		position: relative;
 		width: rem(25);
@@ -55,8 +53,4 @@
 		top: 40%;
 		transform: rotate(45deg) translate(0px, 50%);
 	}
-}
-
-._lock {
-	overflow: hidden;
 }
