@@ -1,6 +1,6 @@
 .menu-burger {
 	display: none;
-	@media (max-width: rem(767)) {
+	@media (max-width: rem(1023)) {
 		display: block;
 		position: relative;
 		width: rem(25);

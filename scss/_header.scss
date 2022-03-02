@@ -18,7 +18,7 @@
 
   &__logo {
     height: rem(50);
-    @media (max-width: rem(767)) {
+    @media (max-width: rem(1023)) {
       margin-right: calc(5px + (587 - 390) * ((100vw - 425px) / (700 - 390)));
     }
   }
@@ -36,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     gap: calc(5px + (80 - 5) * ((100vw - 900px) / (1440 - 900)));
-    @media (max-width: rem(767)) {
+    @media (max-width: rem(1023)) {
       display: none;
     }
     @media (max-width: rem(427)) {

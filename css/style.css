@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
 .header {
   position: relative;
   display: -webkit-box;
@@ -35,7 +34,7 @@
   height: 3.125rem;
 }
 
-@media (max-width: 47.9375rem) {
+@media (max-width: 63.9375rem) {
   .header__logo {
     margin-right: calc(5px + (587 - 390) * ((100vw - 425px) / (700 - 390)));
   }
@@ -62,7 +61,7 @@
   gap: calc(5px + (80 - 5) * ((100vw - 900px) / (1440 - 900)));
 }
 
-@media (max-width: 47.9375rem) {
+@media (max-width: 63.9375rem) {
   .header__nav_menu {
     display: none;
   }
@@ -167,22 +166,24 @@ ul.menu div.pod-punkt {
   display: none;
   position: absolute;
   top: 50px;
-  left: 0;
-  width: 600px;
+  left: -50px;
+  width: 200px;
   height: 708px;
   background: #d9d9d9;
   padding: 48px 0;
   z-index: 0;
 }
 
-@media (max-width: 59.4375rem) {
+@media (max-width: 89.875rem) {
   ul.menu div.pod-punkt {
-    top: 69px;
-    height: 681px;
+    top: 50px;
+    height: 690px;
+    padding: 25px 0;
   }
 }
 
 ul.menu li.punkt {
+  position: relative;
   padding: 15px 0;
   border-bottom: 3px solid transparent;
 }
@@ -205,14 +206,9 @@ ul.menu .drop__list_item {
 
 ul.menu a.drop__list_link {
   display: block;
-  font-size: 1.375rem;
+  font-size: 1.125rem;
+  line-height: 24px;
   padding: 16px 30px 16px 0;
-}
-
-@media (max-width: 59.4375rem) {
-  ul.menu a.drop__list_link {
-    font-size: 1.125rem;
-  }
 }
 
 ul.menu a.drop__list_link:hover {
@@ -224,35 +220,65 @@ ul.menu a.drop__list_link:hover {
   display: none;
   position: absolute;
   top: 0;
-  left: 600px;
-  width: 841px;
+  left: 200px;
+  width: 355px;
   height: 44.25rem;
   background: #ececec;
   padding: 48px 0 48px 30px;
   text-align: start;
 }
 
+@media (max-width: 89.875rem) {
+  .submenu__pod-punkt {
+    top: 0px;
+    height: 688px;
+    width: 15.8125rem;
+    padding: 25px 15px 25px 25px;
+  }
+}
+
 .submenu__title {
-  font-size: 2.5rem;
+  font-size: 2rem;
+  line-height: 36px;
   font-weight: 300;
   margin-bottom: 2.5rem;
   color: #0062ff;
 }
 
+@media (max-width: 89.875rem) {
+  .submenu__title {
+    margin-bottom: 1.5625rem;
+    font-size: 1.5rem;
+  }
+}
+
 .submenu__text {
-  width: 20rem;
+  max-width: 20rem;
   color: #262626;
   line-height: 1.5rem;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 300;
   margin-bottom: 30px;
 }
 
+@media (max-width: 89.875rem) {
+  .submenu__text {
+    font-size: 0.75rem;
+  }
+}
+
 .submenu__item a {
   display: inline-block;
-  padding: 16px 0 16px;
+  padding: 10px 0;
   color: #0062ff;
   font-size: 1.125rem;
+  line-height: 24px;
+}
+
+@media (max-width: 89.875rem) {
+  .submenu__item a {
+    font-size: 0.875rem;
+  }
 }
 
 .submenu__item a:hover {
@@ -261,10 +287,18 @@ ul.menu a.drop__list_link:hover {
 
 .submenu__img {
   position: absolute;
-  top: 100px;
-  right: 100px;
-  width: 25rem;
+  top: 450px;
+  left: 100px;
+  width: 9.375rem;
   height: auto;
+}
+
+@media (max-width: 89.875rem) {
+  .submenu__img {
+    width: 6.25rem;
+    top: 450px;
+    left: 80px;
+  }
 }
 
 li.submenu:hover div.submenu__pod-punkt {
@@ -397,7 +431,7 @@ li.submenu:hover div.submenu__pod-punkt {
   display: none;
 }
 
-@media (max-width: 47.9375rem) {
+@media (max-width: 63.9375rem) {
   .menu-burger {
     display: block;
     position: relative;
