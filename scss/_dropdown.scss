@@ -1,31 +1,41 @@
 ul.menu {
   div.pod-punkt {
-    display: none;
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: 0.2s;
+    display: block;
     position: absolute;
-    top: 50px;
-    left: -50px;
-    width: 200px;
-    height: 708px;
+    top: rem(50);
+    left: rem(-50);
+    width: rem(200);
+    height: rem(708);
     background: #d9d9d9;
-    padding: 48px 0;
-    z-index: 0;
+    padding: rem(48) 0;
     @media (max-width: rem(1438)) {
-      top: 50px;
-      height: 690px;
-      padding: 25px 0;
+      top: rem(50);
+      height: rem(690);
+      padding: rem(25) 0;
+    }
+    &_arrow {
+      position: absolute;
+      top: rem(18);
+      right: 0;
+      text-align: end;
+      margin-right: 20px;
+      font-size: 13px;
     }
   }
 
   li.punkt {
     position: relative;
-    padding: 15px 0;
+    padding: rem(15) 0;
     border-bottom: 3px solid transparent;
     &:hover {
       border-bottom: 3px solid $blueColor;
     }
   }
   li.punkt:hover div.pod-punkt {
-    display: block;
+    transform: scaleY(1);
   }
   .drop__list_item {
     text-align: right;
@@ -37,7 +47,7 @@ ul.menu {
   a.drop__list_link {
     display: block;
     font-size: rem(18);
-    line-height: 24px;
+    line-height: rem(24);
     padding: 16px 30px 16px 0;
     &:hover {
       background: $blueColor;
@@ -46,23 +56,20 @@ ul.menu {
   }
 }
 
-.pod-produkt {
-  //position: relative;
-}
-
 .submenu__pod-punkt {
   display: none;
   position: absolute;
   top: 0;
-  left: 200px;
-  width: 355px;
+  left: rem(200);
+  width: rem(355);
   height: rem(708);
   background: $mainColor;
   padding: 48px 0 48px 30px;
   text-align: start;
   @media (max-width: rem(1438)) {
     top: 0px;
-    height: 688px;
+    height: rem(688);
+
     width: rem(253);
     padding: 25px 15px 25px 25px;
   }
@@ -70,7 +77,8 @@ ul.menu {
 
 .submenu__title {
   font-size: rem(32);
-  line-height: 36px;
+  line-height: rem(36);
+
   font-weight: 300;
   margin-bottom: rem(40);
   color: $blueColor;
@@ -86,7 +94,8 @@ ul.menu {
   line-height: rem(24);
   font-size: rem(16);
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: rem(30);
+
   @media (max-width: rem(1438)) {
     font-size: rem(12);
   }
@@ -98,7 +107,8 @@ ul.menu {
     padding: 10px 0;
     color: $blueColor;
     font-size: rem(18);
-    line-height: 24px;
+    line-height: rem(24);
+
     @media (max-width: rem(1438)) {
       font-size: rem(14);
     }
@@ -109,14 +119,14 @@ ul.menu {
 }
 .submenu__img {
   position: absolute;
-  top: 450px;
-  left: 100px;
+  top: rem(450);
+  left: rem(100);
   width: rem(150);
   height: auto;
   @media (max-width: rem(1438)) {
     width: rem(100);
-    top: 450px;
-    left: 80px;
+    top: rem(450);
+    left: rem(80);
   }
 }
 
