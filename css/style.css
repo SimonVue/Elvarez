@@ -163,28 +163,45 @@ label {
 }
 
 ul.menu div.pod-punkt {
-  display: none;
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: 0 0;
+      -ms-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  display: block;
   position: absolute;
-  top: 50px;
-  left: -50px;
-  width: 200px;
-  height: 708px;
+  top: 3.125rem;
+  left: -3.125rem;
+  width: 12.5rem;
+  height: 44.25rem;
   background: #d9d9d9;
-  padding: 48px 0;
-  z-index: 0;
+  padding: 3rem 0;
 }
 
 @media (max-width: 89.875rem) {
   ul.menu div.pod-punkt {
-    top: 50px;
-    height: 690px;
-    padding: 25px 0;
+    top: 3.125rem;
+    height: 43.125rem;
+    padding: 1.5625rem 0;
   }
+}
+
+ul.menu div.pod-punkt_arrow {
+  position: absolute;
+  top: 1.125rem;
+  right: 0;
+  text-align: end;
+  margin-right: 20px;
+  font-size: 13px;
 }
 
 ul.menu li.punkt {
   position: relative;
-  padding: 15px 0;
+  padding: 0.9375rem 0;
   border-bottom: 3px solid transparent;
 }
 
@@ -193,7 +210,9 @@ ul.menu li.punkt:hover {
 }
 
 ul.menu li.punkt:hover div.pod-punkt {
-  display: block;
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
 }
 
 ul.menu .drop__list_item {
@@ -207,7 +226,7 @@ ul.menu .drop__list_item {
 ul.menu a.drop__list_link {
   display: block;
   font-size: 1.125rem;
-  line-height: 24px;
+  line-height: 1.5rem;
   padding: 16px 30px 16px 0;
 }
 
@@ -220,8 +239,8 @@ ul.menu a.drop__list_link:hover {
   display: none;
   position: absolute;
   top: 0;
-  left: 200px;
-  width: 355px;
+  left: 12.5rem;
+  width: 22.1875rem;
   height: 44.25rem;
   background: #ececec;
   padding: 48px 0 48px 30px;
@@ -231,7 +250,7 @@ ul.menu a.drop__list_link:hover {
 @media (max-width: 89.875rem) {
   .submenu__pod-punkt {
     top: 0px;
-    height: 688px;
+    height: 43rem;
     width: 15.8125rem;
     padding: 25px 15px 25px 25px;
   }
@@ -239,7 +258,7 @@ ul.menu a.drop__list_link:hover {
 
 .submenu__title {
   font-size: 2rem;
-  line-height: 36px;
+  line-height: 2.25rem;
   font-weight: 300;
   margin-bottom: 2.5rem;
   color: #0062ff;
@@ -258,7 +277,7 @@ ul.menu a.drop__list_link:hover {
   line-height: 1.5rem;
   font-size: 1rem;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 @media (max-width: 89.875rem) {
@@ -272,7 +291,7 @@ ul.menu a.drop__list_link:hover {
   padding: 10px 0;
   color: #0062ff;
   font-size: 1.125rem;
-  line-height: 24px;
+  line-height: 1.5rem;
 }
 
 @media (max-width: 89.875rem) {
@@ -287,8 +306,8 @@ ul.menu a.drop__list_link:hover {
 
 .submenu__img {
   position: absolute;
-  top: 450px;
-  left: 100px;
+  top: 28.125rem;
+  left: 6.25rem;
   width: 9.375rem;
   height: auto;
 }
@@ -296,8 +315,8 @@ ul.menu a.drop__list_link:hover {
 @media (max-width: 89.875rem) {
   .submenu__img {
     width: 6.25rem;
-    top: 450px;
-    left: 80px;
+    top: 28.125rem;
+    left: 5rem;
   }
 }
 
