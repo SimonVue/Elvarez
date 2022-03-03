@@ -1,3 +1,3 @@
-"ALVARES"
+"ELVAREZ"
 
-https://simonvue.github.io/alvares/
+https://simonvue.github.io/elvarez/
