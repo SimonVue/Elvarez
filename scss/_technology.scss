@@ -5,7 +5,7 @@
   @media (max-width: rem(1222)) {
     flex-direction: column;
     margin: 0 auto;
-    @media (max-width: 427px) {
+    @media (max-width: rem(427)) {
       padding: 0;
       padding-bottom: rem(30);
     }
@@ -28,7 +28,8 @@
     display: flex;
     max-width: rem(1025);
     gap: 16px;
-    padding-right: 64px;
+    padding-right: rem(64);
+
     @media (max-width: rem(1222)) {
       width: rem(100%);
       padding: 0;
@@ -46,11 +47,12 @@
     .card {
       display: block;
       padding: rem(16);
-      width: 450px;
+      width: rem(450);
+
       height: rem(480);
       background: $greyColor;
       @media (max-width: rem(1222)) {
-        max-width: 310px;
+        max-width: rem(310);
       }
 
       @media (max-width: rem(1024)) {
@@ -61,8 +63,10 @@
         width: 100%;
       }
       @media (max-width: rem(630)) {
-        width: 300px;
-        min-height: 350px;
+        width: rem(300);
+
+        min-height: rem(350);
+
         height: auto;
       }
       &__title {
@@ -79,13 +83,14 @@
         font-weight: 300;
         @media (max-width: rem(980)) {
           font-size: rem(14);
-          line-height: 27px;
+          line-height: rem(27);
         }
         &::before {
           content: "-";
           top: 0;
           left: 0;
-          margin-right: 5px;
+          margin-right: rem(5);
+
           color: $blueColor;
         }
         a {

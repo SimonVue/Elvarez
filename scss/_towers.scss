@@ -32,10 +32,10 @@
         margin: 0 auto;
       }
       &__title {
-        font-size: calc(20px + (53 - 20) * ((100vw - 320px) / (1440 - 320))); //rem(53);
+        font-size: calc(20px + (53 - 20) * ((100vw - 320px) / (1440 - 320)));
         font-weight: 300;
-        line-height: calc(24px + (57 - 24) * ((100vw - 320px) / (1440 - 320))); //57px;
-        max-width: 270px;
+        line-height: calc(24px + (57 - 24) * ((100vw - 320px) / (1440 - 320)));
+        max-width: rem(270);
         margin-bottom: rem(24);
         @media (max-width: rem(767)) {
           text-align: center;
@@ -45,7 +45,8 @@
         }
       }
       &__text {
-        max-width: 250px;
+        max-width: rem(250);
+        
       }
       &__btn {
         position: absolute;
@@ -95,7 +96,8 @@
       }
       &__text {
         text-align: start;
-        max-width: 250px;
+        max-width: rem(250);
+        
       }
       &__btn {
         .btn__text {
