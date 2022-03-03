@@ -28,7 +28,7 @@ $footerColor: #5a5a5a;
 @mixin wrapPosition {
   max-width: rem(1170);
   margin: 0 auto;
-  padding: 0 15px;
+  padding: 0 rem(15);
 }
 
 @mixin button {
@@ -45,7 +45,8 @@ $footerColor: #5a5a5a;
     font-family: FontAwesome, serif;
     content: "\f061";
     font-size: rem(20);
-    margin-left: 20px;
+    margin-left: rem(20);
+
     vertical-align: middle;
   }
 }

@@ -7,7 +7,7 @@
   @media (max-width: rem(767)) {
     flex-direction: column;
     text-align: center;
-    gap: 20px;
+    gap: rem(20);
   }
 
   &__text {
@@ -15,7 +15,8 @@
     line-height: calc(18px + (36 - 18) * ((100vw - 320px) / (1170 - 320)));
     font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (1170 - 320)));
     font-weight: 300;
-    margin-right: 10px;
+    margin-right: rem(10);
+
     span {
       font-weight: 400;
     }

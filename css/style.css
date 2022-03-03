@@ -1099,7 +1099,7 @@ hr {
   }
 }
 
-@media (max-width: 76.375rem) and (max-width: 427px) {
+@media (max-width: 76.375rem) and (max-width: 26.6875rem) {
   .technology {
     padding: 0;
     padding-bottom: 1.875rem;
@@ -1132,7 +1132,7 @@ hr {
   display: flex;
   max-width: 64.0625rem;
   gap: 16px;
-  padding-right: 64px;
+  padding-right: 4rem;
 }
 
 @media (max-width: 76.375rem) {
@@ -1163,14 +1163,14 @@ hr {
 .technology .cards .card {
   display: block;
   padding: 1rem;
-  width: 450px;
+  width: 28.125rem;
   height: 30rem;
   background: #f2f4f8;
 }
 
 @media (max-width: 76.375rem) {
   .technology .cards .card {
-    max-width: 310px;
+    max-width: 19.375rem;
   }
 }
 
@@ -1189,8 +1189,8 @@ hr {
 
 @media (max-width: 39.375rem) {
   .technology .cards .card {
-    width: 300px;
-    min-height: 350px;
+    width: 18.75rem;
+    min-height: 21.875rem;
     height: auto;
   }
 }
@@ -1217,7 +1217,7 @@ hr {
 @media (max-width: 61.25rem) {
   .technology .cards .card__link {
     font-size: 0.875rem;
-    line-height: 27px;
+    line-height: 1.6875rem;
   }
 }
 
@@ -1225,7 +1225,7 @@ hr {
   content: "-";
   top: 0;
   left: 0;
-  margin-right: 5px;
+  margin-right: 0.3125rem;
   color: #0062ff;
 }
 
@@ -1299,7 +1299,7 @@ hr {
   font-size: calc(20px + (53 - 20) * ((100vw - 320px) / (1440 - 320)));
   font-weight: 300;
   line-height: calc(24px + (57 - 24) * ((100vw - 320px) / (1440 - 320)));
-  max-width: 270px;
+  max-width: 16.875rem;
   margin-bottom: 1.5rem;
 }
 
@@ -1313,7 +1313,7 @@ hr {
 }
 
 .towers__left .info__text, .towers__right .info__text {
-  max-width: 250px;
+  max-width: 15.625rem;
 }
 
 .towers__left .info__btn, .towers__right .info__btn {
@@ -1385,7 +1385,7 @@ hr {
 
 .towers__right .info__text {
   text-align: start;
-  max-width: 250px;
+  max-width: 15.625rem;
 }
 
 .towers__right .info__btn .btn__text {
