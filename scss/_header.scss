@@ -1,6 +1,5 @@
-@import "_mixin.scss";
-
 .header {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 100%;
@@ -8,6 +7,8 @@
   padding: 0 rem(40);
   align-items: center;
   gap: rem(15);
+  z-index: 1;
+  border-bottom: 2px solid #bfbfbf;
   @media (max-width: rem(1160)) {
     padding: rem(2) rem(15);
   }
@@ -17,14 +18,14 @@
 
   &__logo {
     height: rem(50);
-    @media (max-width: rem(767)) {
+    @media (max-width: rem(1023)) {
       margin-right: calc(5px + (587 - 390) * ((100vw - 425px) / (700 - 390)));
     }
   }
   @media (max-width: rem(427)) {
     margin-right: rem(80);
   }
-  img {
+  .logo_img {
     width: auto;
     height: 100%;
   }
@@ -35,7 +36,7 @@
     display: flex;
     justify-content: space-between;
     gap: calc(5px + (80 - 5) * ((100vw - 900px) / (1440 - 900)));
-    @media (max-width: rem(767)) {
+    @media (max-width: rem(1023)) {
       display: none;
     }
     @media (max-width: rem(427)) {
@@ -45,24 +46,13 @@
 }
 
 .menu_item {
-  position: relative;
+  //position: relative;
   list-style: none;
   text-align: center;
   padding-bottom: rem(5);
-  transition: 3s;
+  //transition: 3s;
   line-height: rem(16);
 
-  &:hover::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    display: block;
-    width: 100%;
-    height: rem(2.4);
-    background-color: $blueColor;
-    opacity: 1;
-  }
   a {
     text-decoration: none;
     color: $fontSizeColor;
@@ -124,5 +114,9 @@ label {
     font-size: rem(24);
     text-decoration: none;
     color: $fontSizeColor;
+    transition: 0.3s;
+    &:hover {
+      color: $blueColor;
+    }
   }
 }

@@ -1,0 +1,101 @@
+footer {
+  background: $mainColor;
+  padding: rem(40) calc(5px + (70 - 5) * ((100vw - 320px) / (1440 - 320)));
+}
+.footer__menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  @media (max-width: rem(485)) {
+    display: block;
+    padding: 0 rem(10);
+  }
+
+  .menu__list {
+    @media (max-width: rem(485)) {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: rem(20);
+    }
+    &_submenu {
+      @media (max-width: rem(485)) {
+        width: rem(485);
+      }
+      @media (max-width: rem(427)) {
+        width: rem(165);
+      }
+    }
+    .right-list {
+      @media (max-width: rem(485)) {
+        margin-top: rem(40);
+      }
+    }
+  }
+  .menu__title {
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1440 - 320)));
+    color: $footerColor;
+    font-weight: 400;
+    margin-bottom: rem(15);
+  }
+  .menu__item {
+    font-size: calc(13px + (16 - 13) * ((100vw - 320px) / (1440 - 320)));
+    font-weight: 300;
+    margin-bottom: rem(7);
+    @media (max-width: rem(427)) {
+      line-height: calc(18px + (18 - 18) * ((100vw - 320px) / (1440 - 320)));
+      margin-bottom: rem(12);
+    }
+    &_lang {
+      margin-top: rem(30);
+    }
+  }
+  .menu__link {
+    color: $footerColor;
+    &:hover {
+      border-bottom: 1px solid $blueColor;
+      color: $blueColor;
+    }
+  }
+}
+
+.footer__submenu {
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid $footerColor;
+  padding: rem(25) rem(10) 0;
+  margin-top: rem(30);
+  gap: 15px;
+  line-height: calc(16px + (18 - 16) * ((100vw - 320px) / (1440 - 320)));
+  text-align: center;
+  @media (max-width: rem(485)) {
+    justify-content: space-between;
+    gap: 12px;
+  }
+  &_item {
+    @media (max-width: rem(485)) {
+      margin-bottom: rem(10);
+    }
+  }
+
+  .left,
+  .right {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    @media (max-width: rem(485)) {
+      display: block;
+      line-height: 18px;
+      text-align: left;
+    }
+  }
+
+  &_link {
+    color: $footerColor;
+    font-weight: 300;
+    font-size: calc(10px + (16 - 10) * ((100vw - 320px) / (1440 - 320)));
+    @media (max-width: rem(485)) {
+      font-size: rem(14);
+    }
+  }
+}

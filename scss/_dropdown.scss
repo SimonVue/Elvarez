@@ -1,0 +1,135 @@
+ul.menu {
+  div.pod-punkt {
+    transform: scaleY(0);
+    transform-origin: 0 0;
+    transition: 0.2s;
+    display: block;
+    position: absolute;
+    top: rem(50);
+    left: rem(-50);
+    width: rem(200);
+    height: rem(708);
+    background: #d9d9d9;
+    padding: rem(48) 0;
+    @media (max-width: rem(1438)) {
+      top: rem(50);
+      height: rem(690);
+      padding: rem(25) 0;
+    }
+    &_arrow {
+      position: absolute;
+      top: rem(18);
+      right: 0;
+      text-align: end;
+      margin-right: 20px;
+      font-size: 13px;
+    }
+  }
+
+  li.punkt {
+    position: relative;
+    padding: rem(15) 0;
+    border-bottom: 3px solid transparent;
+    &:hover {
+      border-bottom: 3px solid $blueColor;
+    }
+  }
+  li.punkt:hover div.pod-punkt {
+    transform: scaleY(1);
+  }
+  .drop__list_item {
+    text-align: right;
+    font-weight: 300;
+    list-style: none;
+    text-decoration: none;
+    color: $fontSizeColor;
+  }
+  a.drop__list_link {
+    display: block;
+    font-size: rem(18);
+    line-height: rem(24);
+    padding: 16px 30px 16px 0;
+    &:hover {
+      background: $blueColor;
+      color: $mainColor;
+    }
+  }
+}
+
+.submenu__pod-punkt {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: rem(200);
+  width: rem(355);
+  height: rem(708);
+  background: $mainColor;
+  padding: 48px 0 48px 30px;
+  text-align: start;
+  @media (max-width: rem(1438)) {
+    top: 0px;
+    height: rem(688);
+
+    width: rem(253);
+    padding: 25px 15px 25px 25px;
+  }
+}
+
+.submenu__title {
+  font-size: rem(32);
+  line-height: rem(36);
+
+  font-weight: 300;
+  margin-bottom: rem(40);
+  color: $blueColor;
+  @media (max-width: rem(1438)) {
+    margin-bottom: rem(25);
+    font-size: rem(24);
+  }
+}
+
+.submenu__text {
+  max-width: rem(320);
+  color: $fontSizeColor;
+  line-height: rem(24);
+  font-size: rem(16);
+  font-weight: 300;
+  margin-bottom: rem(30);
+
+  @media (max-width: rem(1438)) {
+    font-size: rem(12);
+  }
+}
+
+.submenu__item {
+  a {
+    display: inline-block;
+    padding: 10px 0;
+    color: $blueColor;
+    font-size: rem(18);
+    line-height: rem(24);
+
+    @media (max-width: rem(1438)) {
+      font-size: rem(14);
+    }
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.submenu__img {
+  position: absolute;
+  top: rem(450);
+  left: rem(100);
+  width: rem(150);
+  height: auto;
+  @media (max-width: rem(1438)) {
+    width: rem(100);
+    top: rem(450);
+    left: rem(80);
+  }
+}
+
+li.submenu:hover div.submenu__pod-punkt {
+  display: block;
+}

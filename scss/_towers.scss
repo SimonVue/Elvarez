@@ -1,0 +1,111 @@
+.towers {
+  display: flex;
+  @media (max-width: rem(767)) {
+    flex-direction: column;
+  }
+
+  &__left,
+  &__right {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    height: rem(650);
+    padding: rem(16) rem(32) 0;
+    background: url("../img/bg-tower-left.jpeg") center / cover no-repeat;
+    @media (max-width: 1023px) {
+      max-height: 550px;
+    }
+    @media (max-width: rem(767)) {
+      padding: rem(30) rem(15) 0;
+      margin: 0 auto;
+      width: 100%;
+    }
+
+    &:last-child {
+      text-align: end;
+    }
+    .info {
+      color: $whiteSize;
+      @media (max-width: rem(427)) {
+        margin: 0 auto;
+      }
+      &__title {
+        font-size: calc(20px + (53 - 20) * ((100vw - 320px) / (1440 - 320))); //rem(53);
+        font-weight: 300;
+        line-height: calc(24px + (57 - 24) * ((100vw - 320px) / (1440 - 320))); //57px;
+        max-width: 270px;
+        margin-bottom: rem(24);
+        @media (max-width: rem(767)) {
+          text-align: center;
+          font-size: rem(24);
+          line-height: rem(34);
+          margin-bottom: rem(40);
+        }
+      }
+      &__text {
+        max-width: 250px;
+      }
+      &__btn {
+        position: absolute;
+        bottom: 0;
+        right: rem(16);
+        width: rem(325);
+        height: rem(160);
+        padding: rem(16);
+        background: $blueColor;
+        @media (max-width: rem(427)) {
+          position: static;
+          margin: 0 auto;
+        }
+        @media (max-width: rem(375)) {
+          width: 100%;
+          height: rem(125);
+        }
+        .btn__link {
+          text-decoration: none;
+          color: $whiteSize;
+          .fa-solid {
+            margin-left: 95%;
+          }
+          .btn__text {
+            max-width: rem(200);
+            font-size: rem(20);
+            font-weight: 300;
+            line-height: rem(26);
+            @media (max-width: rem(427)) {
+              font-size: rem(18);
+            }
+            @media (max-width: rem(375)) {
+              font-size: rem(16);
+            }
+          }
+        }
+      }
+    }
+  }
+  &__right {
+    background: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.8)),
+      url("../img/bg-tower-right1.jpeg") center / cover no-repeat;
+    .info {
+      color: $fontSizeColor;
+      &__title {
+        text-align: left;
+      }
+      &__text {
+        text-align: start;
+        max-width: 250px;
+      }
+      &__btn {
+        .btn__text {
+          max-width: rem(200);
+          font-size: rem(20);
+          font-weight: 300;
+          line-height: rem(26);
+          text-align: left;
+        }
+      }
+    }
+  }
+}

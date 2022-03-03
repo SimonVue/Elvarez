@@ -12,6 +12,8 @@ $mainColor: #ececec;
 $fontSizeColor: #262626;
 $blueColor: #0062ff;
 $whiteSize: #fff;
+$greyColor: #f2f4f8;
+$footerColor: #5a5a5a;
 
 @mixin colorBorder {
   color: $orangeColor;
@@ -19,7 +21,7 @@ $whiteSize: #fff;
 }
 
 @mixin backgroundBorder {
-  background: $orangeColor;
+  background-color: $orangeColor;
   border: 2px solid $orangeColor;
 }
 
@@ -32,12 +34,12 @@ $whiteSize: #fff;
 @mixin button {
   width: rem(230);
   padding: rem(13) rem(20);
-  background: $blueColor;
+  background-color: $blueColor;
   color: $mainColor;
   font-size: rem(16);
   text-decoration: none;
   &:hover {
-    background: #0052d5;
+    background-color: #0052d5;
   }
   &:after {
     font-family: FontAwesome, serif;
@@ -47,7 +49,8 @@ $whiteSize: #fff;
     vertical-align: middle;
   }
 }
-/* ------- Адаптивная верстка (при необхдимости раскомментировать)------------- */
+
+// Адаптивная верстка (при необхдимости раскомментировать)
 
 // @media (max-width: em(1200))
 //   min-width: 970px
