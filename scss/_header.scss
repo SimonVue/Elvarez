@@ -10,7 +10,7 @@
   z-index: 1;
   border-bottom: 2px solid #bfbfbf;
   @media (max-width: rem(1160)) {
-    padding: rem(2) rem(15);
+    padding: 0 rem(15);
   }
   @media (max-width: rem(427)) {
     gap: rem(20);
@@ -26,8 +26,8 @@
     margin-right: rem(80);
   }
   .logo_img {
-    width: auto;
-    height: 100%;
+    width: rem(92);
+    height: auto;
   }
 }
 
