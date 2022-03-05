@@ -20,7 +20,7 @@
 
 @media (max-width: 72.5rem) {
   .header {
-    padding: 0.125rem 0.9375rem;
+    padding: 0 0.9375rem;
   }
 }
 
@@ -47,8 +47,8 @@
 }
 
 .header .logo_img {
-  width: auto;
-  height: 100%;
+  width: 5.75rem;
+  height: auto;
 }
 
 .header__nav_menu {
@@ -518,7 +518,7 @@ li.submenu:hover div.submenu__pod-punkt {
   display: none;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   .nav__menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -702,7 +702,7 @@ hr {
   font-family: FontAwesome, serif;
   content: "\f061";
   font-size: 1.25rem;
-  margin-left: 20px;
+  margin-left: 1.25rem;
   vertical-align: middle;
 }
 
@@ -736,7 +736,7 @@ hr {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    gap: 20px;
+    gap: 1.25rem;
   }
 }
 
@@ -745,7 +745,7 @@ hr {
   line-height: calc(18px + (36 - 18) * ((100vw - 320px) / (1170 - 320)));
   font-size: calc(14px + (28 - 14) * ((100vw - 320px) / (1170 - 320)));
   font-weight: 300;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 }
 
 .news__text span {
@@ -769,7 +769,7 @@ hr {
   font-family: FontAwesome, serif;
   content: "\f061";
   font-size: 1.25rem;
-  margin-left: 20px;
+  margin-left: 1.25rem;
   vertical-align: middle;
 }
 
